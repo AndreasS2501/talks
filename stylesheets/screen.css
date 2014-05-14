@@ -144,7 +144,7 @@ header {
   top: 38px;
 }
 
-header span.ribbon-inner {
+header div.ribbon-inner {
   position: relative;
   display: block;
   background-color: #cd596b;
@@ -153,7 +153,7 @@ header span.ribbon-inner {
   z-index: 1;
 }
 
-header span.left-tail, header span.right-tail {
+header div.left-tail, header div.right-tail {
   position: relative;
   display: block;
   width: 56px;
@@ -164,12 +164,12 @@ header span.left-tail, header span.right-tail {
   z-index: 0;
 }
 
-header span.left-tail {
+header div.left-tail {
   background-position: 0 0;
   left: -31px;
 }
 
-header span.right-tail {
+header div.right-tail {
   background-position: -56px 0;
   right: -31px;
 }
@@ -207,7 +207,7 @@ div#no-downloads {
   background: transparent url(../images/bg-ramp.jpg) center 171px no-repeat;
 }
 
-div#no-downloads span.inner {
+div#no-downloads div.inner {
   display: block;
   position: relative;
   height: 197px;
@@ -258,7 +258,7 @@ section#downloads a.tgz:hover {
   background-position: -275px -197px;
 }
 
-span.banner-fix {
+div.banner-fix {
   background: transparent url(../images/download-fallback-bg.png) center top no-repeat;
   display: block;
   height: 19px;
@@ -283,13 +283,13 @@ footer {
   text-align: center;
 }
 
-footer span.ribbon-outer {
+footer div.ribbon-outer {
   display: block;
   position: relative;
   border-bottom: 2px solid #bdb6ad;
 }
 
-footer span.ribbon-inner {
+footer div.ribbon-inner {
   position: relative;
   display: block;
   background-color: #cd596b;
@@ -309,7 +309,7 @@ footer a {
   color: #cd596b;
 }
 
-footer span.ribbon-inner p {
+footer div.ribbon-inner p {
   background-color: #7c334f;
   margin: 0;
   color: #e69b95;
@@ -317,7 +317,7 @@ footer span.ribbon-inner p {
   padding-bottom:4px;
 }
 
-footer span.ribbon-inner a {
+footer div.ribbon-inner a {
   position: relative;
   bottom: -1px;
   color: #7eb0d2;
@@ -328,11 +328,11 @@ footer span.ribbon-inner a {
   font-size: 1.2em;
 }
 
-footer span.ribbon-inner a:hover {
+footer div.ribbon-inner a:hover {
   color: #7eb0d2;
 }
 
-footer span.left-tail, footer span.right-tail {
+footer div.left-tail, footer div.right-tail {
   position: relative;
   display: block;
   width: 18px;
@@ -343,17 +343,17 @@ footer span.left-tail, footer span.right-tail {
   z-index: 0;
 }
 
-footer span.left-tail {
+footer div.left-tail {
   background-position: 0 0;
   left: -11px;
 }
 
-footer span.right-tail {
+footer div.right-tail {
   background-position: -18px 0;
   right: -11px;
 }
 
-footer span.octocat {
+footer div.octocat {
   background: transparent url(../images/octocat.png) 0 0 no-repeat;
   display: block;
   width: 30px;
@@ -566,4 +566,34 @@ dd p:first-child {
   margin: .8em 0;
   font-size: .85em;
   font-style: italic;
+}
+
+div.talk-title {
+  font-weight: bold;
+}
+
+.title,.subtitle {
+  font-family: 'Open Sans', Myriad, Calibri, sans-serif;
+  font-weight: bold;
+}
+
+header .title {
+  background-color: #7c334f;
+  font-size: 2.5em;
+  font-weight: 800;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #ece4d8;
+  text-align: center;
+  line-height:1;
+  padding: 14px 20px 0;
+}
+
+header .subtitle {
+  background-color: #7c334f;
+  font: bold italic .85em/1.5 Georgia, Times, “Times New Roman”, serif;
+  color: #e69b95;
+  padding-bottom: 14px;
+  margin-top: -3px;
+  text-align: center;
 }
